@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>テスト</title>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<link href="bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <h1>Tab内のラジオボタンの変更を行なった際の挙動</h1>
+</header>
+<!-- タブ・メニュー -->
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#sampleContentA" data-toggle="tab">タブA</a></li>
+	<li><a href="#sampleContentB" data-toggle="tab">タブB</a></li>
+	<li><a href="#sampleContentC" data-toggle="tab">タブＣ</a></li>
+</ul>
+
+<!-- タブ内容 -->
+<div class="tab-content">
+	<div class="tab-pane active" id="sampleContentA">
+    <input type="radio" name="q1" value="ラジオ1"> ラジオ1
+    <input type="radio" name="q1" value="ラジオ2"> ラジオ2
+    <input type="radio" name="q1" value="ラジオ3"> ラジオ3
+    <form action="#" method="post">
+      <input type="submit" value="送信する">
+      </p>
+    </form>
+	</div>
+	<div class="tab-pane" id="sampleContentB">
+    <input type="radio" name="q1" value="ラジオ4"> ラジオ4
+    <input type="radio" name="q1" value="ラジオ5"> ラジオ5
+    <input type="radio" name="q1" value="ラジオ6"> ラジオ6
+    <form action="#" method="post">
+      <input type="submit" value="送信する">
+    </form>
+	</div>
+	<div class="tab-pane" id="sampleContentC">
+    <input type="radio" name="q1" value="ラジオ7"> ラジオ7
+    <input type="radio" name="q1" value="ラジオ8"> ラジオ8
+    <input type="radio" name="q1" value="ラジオ9"> ラジオ9
+    <form action="#" method="post">
+      <input type="submit" value="送信する">
+    </form>
+	</div>
+</div>
+<script>
+$('input[type=submit]').click(function (e) {
+	e.preventDefault();
+  value = $('input[type=radio]:checked').val();
+	alert(value);
+});
+</script>
+</html>
