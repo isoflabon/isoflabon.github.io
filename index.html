@@ -1,58 +1,86 @@
 <!doctype html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>Home</title>
-<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="index.js"></script>
-<script type="text/javascript" src="bootstrap.min.js"></script>
-<link href="bootstrap.min.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- my customise CSS-->
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
 
-<body>
-<header>
-    <h1>ポートフォリオ</h1>
-</header>
+  <body>
+    <header class="page-title border-emphasis">
+      <h1>isoflabonのポートフォリオ</h1>
+    </header>
 
-<h2>自己紹介</h2>
-<h3>イソフラボン</h3>
-<ul>
-  <li><a href ="https://github.com/isoflabon/n_b_b">GitHub</a></li>
-  <li><a href ="https://twitter.com/isoflabono?lang=ja">Twitter</a></li>
-  <li><a href ="https://techdatebook.hatenablog.com/">ブログURL</a></a></li>
-</ul>
+    <div class="container mt-5">
+      <h3>自己紹介</h3>
+      <div class="self-produce">
+        <div class="container">
+          <h5>琉球大学理 理工学研究科 情報工学専攻 修士1年</h5>
+          <div class="container">
+            　大学3年の頃にWEB開発を興味を持ち勉強をはじめました。同年に<a href="http://bizsysd.enpit.jp">enPiT</a>の活動の一環でスクラム開発を用いてアトオスを開発しました。<br>
+            翌年の1月にCryptonoticeを個人で開発を行いました。2018年3月から仕事を始め、学生フリーランスとして現在に至るまで業務システムの開発をバックエンドを中心ですが、フロントエンド、インフラ構築も含め開発しています。
+          </div>
 
-<h2>今までの作成物</h2>
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">アトオス</h3>
-  </div>
-  <div class="panel-body">
-    <h4>サービスURL: <a href ="https://ato-su.herokuapp.com/">https://ato-su.herokuapp.com/</a></h4>
-    <h4>GitHubURL: <a href ="https://github.com/isoflabon/n_b_b">https://github.com/isoflabon/n_b_b</a></h4><br>
-    <h4>サービス概要:</h4>
-    恋愛において女心がわからず、相談できる相手もいないため、どう行動していいか分からない男性向けのアトオスというプロダクトは<br>
-    [女性からの意見を集めることで、男性の次の行動を後押しするサービス]です。<br>
-    これは[多くの女性のリアルな意見を聞くこと]ができ<br>
-    yahoo知恵袋で男性が恋愛の悩みを投稿するのとは違って、男性は悩みを投稿し、女性はアドバイスをするサービスの形であるため、<br>
-    他のサービスよりも男性が悩みを投稿しやすくなっています。<br>
-    <h4>コメント</h4>
-    こちらはenPitという高度IT人材育成のプロジェクトでチームで開発を行いました。開発期間は2ヶ月半をかけスクラム開発によって行いました。<br>
-  </div>
-</div>
+          <h5 class="mt-3">技術スタック</h5>
+          <div class="container">
+          　Ruby, Ruby on Rails, Rspec, Wercker, Python, AWS, Nginx, Vue.js
+          </div>
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Cryptonotice</h3>
-  </div>
-  <div class="panel-body">
-    <h4>サービスURL: <a href ="https://cryptonotice.herokuapp.com/">https://cryptonotice.herokuapp.com/</a></h4>
-    <h4>GitHubURL: <a href ="#">非公開</a></h4><br>
-    <h4>サービス概要:</h4>
-    仮想通貨の値段をユーザ自身が設定して欲しい金額になったらLINEへ通知を行うサービスです。<br>
-    現在メールでの通知サービスはあるのですが、コミュニケーションの手段としてよく使われているLineへ通知してくれるためより通知により気付きやすくなります。
-    <h4>コメント</h4>
-    初めての個人開発でフロントエンドが少しおざなりになっている感じはしますが、Web制作の全体を学べたのでよかったと思います。
-  </div>
-</div>
+          <h5 class="mt-3">SNS・ブログ等</h5>
+          <ul>
+            <li><a href ="https://github.com/isoflabon" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href ="https://twitter.com/isoflabono?lang=ja" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href ="https://techdatebook.hatenablog.com/" target="_blank" rel="noopener noreferrer">はてなブログ</a></a></li>
+        </ul>
+        </div>
+      </div>
+
+      <h2>今までの制作物</h2>
+      <div class="row">
+        <div class="col-md-6 mt-3">
+          <div class="card">
+            <a href="https://ato-su.herokuapp.com">
+              <img src="./images/atoosu-top-image.png" class="card-img-top" alt="アトオスtopページ">
+            </a>
+            <div class="card-body">
+              男性向けの恋愛相談サービス: <a href="https://ato-su.herokuapp.com"><b>アトオス</b></a>
+              <p class="border-emphasis pb-1">GitHubURL: <a href="https://github.com/isoflabon/n_b_b">https://github.com/isoflabon/n_b_b</a></p>
+              <p class="card-text mt-2">
+                　恋愛において女心がわからず、相談できる相手もいないため、<br>
+                どう行動していいか分からない男性向けのアトオスというサービスは<br>
+                <b>女性からの意見を集めることで、男性の次の行動を後押しするサービス</b>です。<br>
+                　これは<b>多くの女性のリアルな意見を聞くこと</b>ができ<br>
+                yahoo知恵袋で男性が恋愛の悩みを投稿するのとは違って、男性は悩みを投稿し、女性はアドバイスをするサービスの形であるため、<br>
+                他のサービスよりも男性が悩みを投稿しやすくなっています。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-3">
+          <div class="card">
+            <a href="https://cryptonotice.herokuapp.com">
+              <img src="./images/cryptonotice-top-image.png" class="card-img-top" alt="cryptonoticetopページ">
+            </a>
+            <div class="card-body">
+              仮想通貨の金額通知サービス: <a href="https://cryptonotice.herokuapp.com"><b>Cryptonotice</b></a>
+              <p class="border-emphasis pb-1">GitHubURL: 非公開</p>
+              <p class="card-text mt-2">
+                <b>仮想通貨の値段をユーザ自身が設定して欲しい金額になったらLINEへ通知</b>を行うサービスです。<br>
+                現在(2018年12月時点)はメールでの通知サービスはあるのですが、コミュニケーションの手段としてよく使われているLineへ通知してくれるためより通知により気付きやすくなります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

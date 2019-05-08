@@ -1,0 +1,10 @@
+.page-title {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.border-emphasis {
+  border-bottom:dotted;/*下線を点線にする*/
+  border-color:#4682b4;
+  border-width: 3px;
+}
